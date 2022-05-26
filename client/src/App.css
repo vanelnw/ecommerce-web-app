@@ -1,0 +1,89 @@
+
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+.productList{
+   background: #ebf5fc;
+   display:flex;
+   justify-content: center;
+   
+}
+
+.filter-sticky{
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.catPoper{
+background: #ebf5fc !important;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05) , inset -5px -5px 5px rgba(255,255,255,0.5),
+     5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255,255,255,0.5)!important;
+
+     border-radius: 15px;
+}
+.singleWrapper {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+margin-bottom: 20px;
+  position: relative;
+  width:32%;
+  height: 380px;
+box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05) , inset -5px -5px 5px rgba(255,255,255,0.5),
+     5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255,255,255,0.5)!important;
+  
+}
+
+
+ .productWrapper{
+  position:absolute;
+  
+  top: 20px;
+  right:20px;
+  left: 20px;
+  bottom: 20px;
+  background:#ebf5fc;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.singleWrapper .productWrapper:hover{
+ transform: translateY(-40px);
+ box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+ background: linear-gradient(45deg,#b95ce4,#4f29cc);
+}
+
+.singleWrapper .productWrapper .content{
+  padding: 20px;
+  text-align: center;
+}
+
+.MuiPaper-elevation6{
+
+}
